@@ -104,6 +104,11 @@ umount /mnt/image              #卸载loop设备
 losetup -d /dev/loop0           #解除loop映射
 ```
 
+镜像转换为头文件
+```
+xxd -i hda.img > diskimage-16MB.h
+```
+
 ### RamDisk应用
 
 应用就是将上面的界面设置用代码实现；
